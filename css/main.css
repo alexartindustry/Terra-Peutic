@@ -1,0 +1,134 @@
+.bot-img {
+    max-width: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -57px;
+}
+
+@media(max-width: 960px) {
+    .bot-img {
+        max-height: 500px;
+    }
+}
+
+@media(max-width: 768px) {
+    .bot-img {
+        max-height: 400px;
+        margin-top: -30px;
+    }
+}
+
+.bg-bot {
+    position: absolute;
+    z-index: 500;
+    width: 101%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 145px;
+    background-color: #1486b3;
+}
+
+.cite {
+    position: relative;
+    background-color: #f4e5d5;
+    border-radius: 70px;
+    padding: 27px 85px;
+    margin-top: 30px;
+}
+
+.cite p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.q1 {
+    left: 30px;
+}
+
+.q2 {
+    right: 30px;
+}
+
+@media(max-width: 768px) {
+    .cite {
+        border-radius: 15px;
+        padding: 60px 15px;
+    }
+    .quote {
+        transform: none;
+        top: auto;
+        max-height: 25px;
+    }
+    .q1 {
+        top: 20px;
+        left: 15px;
+    }
+    .q2 {
+        bottom: 20px;
+        right: 15px;
+    }
+}
+
+/*experts begin*/
+.item-cite {
+    background-color: #000f20;
+    padding: 24px 20px 20px 20px;
+}
+
+@media(max-width: 768px) {
+    .item-cite br {
+        display: none;
+    }
+}
+
+.title {
+    padding: 29px 20px 25px 20px;
+}
+
+.country {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    /*background-color: rgba(20,134,179,0.9);*/
+    background-color: transparent;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.country h6 {
+    flex: 1 1;
+    text-align: left;
+    padding-right: 10px;
+    padding-bottom: 14px;
+}
+
+.country img {
+    height: 64px;
+}
+
+.block2 {
+    padding: 55px 0 100px 0;
+}
+
+@media(max-width: 960px) {
+    .block2 {
+        padding: 0;
+    }
+    .block2 .content {
+        padding-top: 30px;
+    }
+}

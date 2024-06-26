@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:image" content="">
+  <title>TERRA PEUTIC</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+</head>
+  <body>
+    <div class="hid">
+    <!--
+    <div id="mySidenav" class="sidenav">
+      <div class="cont">
+        <ul>
+          <li><a href="#">Home</a></li>             
+          <li><a href="#">Pricing</a></li>              
+          <li><a href="#">Live Demo</a></li>              
+          <li><a href="#">API</a></li>            
+          <li><a href="#">Terms</a></li>             
+          <li><a href="#">Login/Register</a></li> 
+        </ul>
+        <a href="javascript:void(0)" class="closebtn" id="closenav" onclick="closeNav()">&times;</a>
+      </div>
+    </div>
+    -->
+    
+    <header>
+      <div class="container">
+        <nav class="va">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logotype" />
+          </a>
+          <div id="burger" class="burger">
+            <div class="burger-line l1"></div>
+            <div class="burger-line l2"></div>
+            <div class="burger-line l3"></div>
+          </div>
+
+          <div id="burger-menu" class="burger-menu">
+            <div class="container">
+              <div class="va mb2">
+                <a href="#" class="logo">
+                  <img src="img/logo.png" alt="logotype" />
+                </a>
+              </div>
+      
+              <div class="menu fl">
+                <div class="col col1">
+                  <p class="menu-title">About Us</p>
+                  <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Why Choose TerraPeutic?</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Press & Accolades</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col col2">
+                  <p class="menu-title">Services & Offerings</p>
+                  <ul>
+                    <li><a href="#">Introduction to Travel Therapy</a></li>
+                    <li><a href="#">Types of Journeys</a></li>
+                    <li><a href="#">Featured Activities</a></li>
+                    <li><a href="#">Therapeutic Modalities</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col">
+                  <p class="menu-title">Destinations</p>
+                  <ul>
+                    <li><a href="#">Featured Destinations</a></li>
+                    <li><a href="#">Upcoming Destinations</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col col3">
+                  <p class="menu-title">Blog</p>
+                  <ul>
+                    <li><a href="#">Featured Articles</a></li>
+                    <li><a href="#">Categories</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col">
+                  <p class="menu-title">Contact Us</p>
+                  <ul>
+                    <li><a href="#">Contact Information</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="#">Map & Office Locations</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="menu va line2">
+                <div class="left fl">
+                  <div class="col col1">
+                    <p class="menu-title"><a href="faq.html">faq</a></p>
+                  </div>
+                  <div class="col">
+                    <p class="menu-title"><a href="#">book a Consultation</a></p>
+                  </div>
+                </div>
+                <div class="sots va">
+                  <a href="#" target="_blank">
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2406 22.9254"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>facebook</title><path class="cls-1" d="M11.7791,4.5033l-1.978.0009c-1.3632,0-1.6126.5377-1.6126,1.5976V8.3075h3.4524a.4591.4591,0,0,1,.3267.1365.4734.4734,0,0,1,.1352.3307l-.0015,3.7689a.4648.4648,0,0,1-.4616.4681H8.1883v9.51a.4649.4649,0,0,1-.4617.468H3.8752a.4648.4648,0,0,1-.4616-.468v-9.51H.4617A.4651.4651,0,0,1,0,12.5436V8.7747a.4642.4642,0,0,1,.4617-.4672H3.4138V5.706c0-3.4273,2.1314-5.6421,5.43-5.6421L11.78.0693a.4645.4645,0,0,1,.461.4672v3.5A.4646.4646,0,0,1,11.7791,4.5033Z" transform="translate(0 -0.0639)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="twitter" data-name="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6665 21.3152"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>twitter</title><path class="cls-1" d="M22.6494,5.5753l.0172.6976c0,7.1123-5.2957,15.3134-14.9806,15.3134a14.6769,14.6769,0,0,1-8.0716-2.418,10.6765,10.6765,0,0,0,1.2565.0741A10.4256,10.4256,0,0,0,7.41,16.94,5.29,5.29,0,0,1,2.492,13.2008,5.1454,5.1454,0,0,0,4.8705,13.11,5.3606,5.3606,0,0,1,.6475,7.8307V7.7638A5.1734,5.1734,0,0,0,3.0323,8.44a5.4686,5.4686,0,0,1-1.63-7.1845A14.8444,14.8444,0,0,0,12.2551,6.8783a5.5268,5.5268,0,0,1-.1364-1.2253A5.3257,5.3257,0,0,1,17.3848.2711a5.196,5.196,0,0,1,3.8424,1.7006A10.4706,10.4706,0,0,0,24.5729.6651a5.3926,5.3926,0,0,1-2.3152,2.9756,10.3382,10.3382,0,0,0,3.0232-.8476A10.74,10.74,0,0,1,22.6494,5.5753Z" transform="translate(0.3856 -0.2711)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="google" data-name="google" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.6918 24.1308"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>google</title><path class="cls-1" d="M19.72,24H4.9123A4.4836,4.4836,0,0,1,.47,19.4755V4.3934A4.4831,4.4831,0,0,1,4.9123-.131H19.72a4.4832,4.4832,0,0,1,4.4423,4.5244V19.4755A4.4837,4.4837,0,0,1,19.72,24ZM9.3083,4.5217c-2.117,0-4.1091,1.6328-4.1091,3.5259a3.4426,3.4426,0,0,0,3.5971,3.496l.4367-.0153a2.0045,2.0045,0,0,0-.24.8991,1.88,1.88,0,0,0,.6427,1.3283l-.8185.0081c-2.6223-.0018-4.641,1.7006-4.641,3.4635,0,1.7386,2.2125,2.8247,4.8349,2.8247,2.99,0,4.6409-1.7259,4.6409-3.4635a3.3688,3.3688,0,0,0-1.65-3.1256c-.4266-.309-1.2437-1.0563-1.2437-1.4973,0-.515.1432-.769.9061-1.3771a3.2469,3.2469,0,0,0,1.3325-2.5111A2.8727,2.8727,0,0,0,11.475,5.3h1.4968l1.0606-.778ZM21.2,8.9178H18.2389V5.9015H16.76V8.9178h-2.963v1.537H16.76v3.0108h1.4792V10.4548H21.2ZM9.48,11.0521c-1.2169-.0362-2.3738-1.3862-2.5842-3.0136-.21-1.6292.6059-2.8725,1.8212-2.8364S11.09,6.5449,11.3,8.1714C11.5119,9.8006,10.6942,11.0891,9.48,11.0521Zm2.9005,5.2391a2.2185,2.2185,0,0,1,.0579.4961c0,1.4033-.887,2.5011-3.4349,2.5011-1.8126,0-3.1221-1.1683-3.1221-2.5734,0-1.3771,1.6233-2.522,3.4358-2.5021a3.9064,3.9064,0,0,1,1.1756.1925C11.4765,15.1011,12.183,15.4951,12.3809,16.2912Z" transform="translate(-0.4701 0.131)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="linkdin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.6918 24.1308"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>linkdin</title><path class="cls-1" d="M21.8728,24H1.6812A1.74,1.74,0,0,1-.0694,22.27V1.5976A1.7394,1.7394,0,0,1,1.6812-.131H21.8728a1.7385,1.7385,0,0,1,1.75,1.7286V22.27A1.74,1.74,0,0,1,21.8728,24ZM3.5337,20.0683h3.58V9.1735h-3.58ZM5.3464,3.92A1.8863,1.8863,0,1,0,5.3,7.6852h.024A1.8869,1.8869,0,1,0,5.3464,3.92Zm14.6705,9.9008c0-3.3478-1.766-4.9039-4.1214-4.9039a3.543,3.543,0,0,0-3.2244,1.8009V9.1726H9.0929c.0468,1.0219,0,10.8957,0,10.8957h3.5779V13.9825A2.4738,2.4738,0,0,1,12.79,13.1a1.9585,1.9585,0,0,1,1.8358-1.3246c1.2941,0,1.8123.9993,1.8123,2.4641v5.8292h3.5787Zm-7.3458-3.103v.0344h-.0232Z" transform="translate(0.0694 0.131)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2852 24.3919"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>youtube</title><path class="cls-1" d="M20.4331,23.4728a3.61,3.61,0,0,1-1.106.6713,3.7592,3.7592,0,0,1-1.3611.2449H3.672a3.7118,3.7118,0,0,1-1.3452-.2449A3.586,3.586,0,0,1,1.22,23.4728a3.282,3.282,0,0,1-.7584-.994,2.745,2.745,0,0,1-.2775-1.2343V14.0536a2.7716,2.7716,0,0,1,.2787-1.22,3.0743,3.0743,0,0,1,.7585-.9985,3.83,3.83,0,0,1,1.1071-.6723,3.5908,3.5908,0,0,1,1.3452-.2539H17.9671a3.6524,3.6524,0,0,1,1.3526.2539,3.8175,3.8175,0,0,1,1.1145.6723,3.0482,3.0482,0,0,1,.7573.9985,2.77,2.77,0,0,1,.2774,1.22v7.1909a2.7312,2.7312,0,0,1-.2786,1.2343A3.1835,3.1835,0,0,1,20.4331,23.4728ZM6.3832,13.3162H1.6492V14.43H3.1663v7.6174h1.463v-7.584H6.3832Zm3.568,2.259H8.487v4.0491c0,.2937.0024.5214.0135.6777.01.16-.0111.2611-.0639.3036a.5606.5606,0,0,1-.3768.3849c-.2025.08-.36-.0334-.4688-.3515a.7837.7837,0,0,1-.0147-.318c.011-.1717.0147-.3931.0147-.6669L7.56,15.5752H6.0949l.0343,4.0157c0,.3162-.0074.5783-.0185.7933a1.9174,1.9174,0,0,0,.0185.4816c.02.1781.0392.3633.0613.5666a.6312.6312,0,0,0,.3044.4834,1.0807,1.0807,0,0,0,.5941.1654,1.9458,1.9458,0,0,0,.6713-.1175,2.3415,2.3415,0,0,0,.6039-.3162,1.3618,1.3618,0,0,0,.4051-.4356l-.0283.8015,1.21.0307Zm4.73,1.2624a1.4821,1.4821,0,0,0-.6664-1.3753,1.007,1.007,0,0,0-.5106-.1319,2.1361,2.1361,0,0,0-1.2114.5078v-2.522H10.8276v8.6656l1.2126-.0334.0933-.54a2.7051,2.7051,0,0,0,1.06.6235,1.0063,1.0063,0,0,0,.7966-.0913,1.3077,1.3077,0,0,0,.5094-.6722,2.9675,2.9675,0,0,0,.1816-1.0735Zm4.62,2.934H18.2041v.7355a.497.497,0,0,1-.1829.4093.67.67,0,0,1-.4358.1446h-.2282a.6112.6112,0,0,1-.42-.1446.5181.5181,0,0,1-.1695-.4093V18.95h2.5334v-.9009c0-.337-.0049-.6623-.016-.9732a3.7792,3.7792,0,0,0-.0774-.7283,1.082,1.082,0,0,0-.3927-.7138,1.7592,1.7592,0,0,0-.7634-.366,2.3522,2.3522,0,0,0-.8935-.0343,1.7455,1.7455,0,0,0-.7892.31,1.69,1.69,0,0,0-.62.8042,4.1281,4.1281,0,0,0-.19,1.41v2.0151a2.2416,2.2416,0,0,0,.6543,1.818,1.9568,1.9568,0,0,0,1.2727.507h.13a1.9386,1.9386,0,0,0,1.3232-.6552A1.5925,1.5925,0,0,0,19.37,20.28C19.3529,20.1267,19.3357,19.955,19.3014,19.7716Zm-2.31-3.1563a.6727.6727,0,0,1,.4638-.1717h.0639a.7533.7533,0,0,1,.4861.1645.5491.5491,0,0,1,.1988.4436l-.0331.8006H16.7693l.0319-.8006A.5694.5694,0,0,1,16.9915,16.6153Zm-4.0762,4.3518a.7525.7525,0,0,1-.4566-.1491.4219.4219,0,0,1-.195-.3434V16.6731a.4446.4446,0,0,1,.195-.3506.72.72,0,0,1,.4566-.1563.7125.7125,0,0,1,.453.1563.447.447,0,0,1,.1988.3506v3.8015a.4249.4249,0,0,1-.1988.3434A.7472.7472,0,0,1,12.9153,20.9671ZM15.559,8.7964a2.6487,2.6487,0,0,1-.4295.5069,1.018,1.018,0,0,1-.5585.1645,1.06,1.06,0,0,1-.6062-.1645,1.2483,1.2483,0,0,1-.367-.4428.9958.9958,0,0,1-.0773-.2711,2.1461,2.1461,0,0,0-.05-.27,2.6083,2.6083,0,0,1-.0307-.4437V2.6528H14.81V7.8611a.48.48,0,0,0,.1411.3452.5242.5242,0,0,0,.3842.1464.5469.5469,0,0,0,.3817-.1464.4562.4562,0,0,0,.1633-.3452V2.6528h1.27V9.3367H15.53ZM12.1,8.8289a1.4335,1.4335,0,0,1-.6187.54,2.0248,2.0248,0,0,1-.9094.1942A2.6649,2.6649,0,0,1,9.6173,9.4a.9955.9955,0,0,1-.5891-.4726,2.3659,2.3659,0,0,1-.3215-.74A7.0844,7.0844,0,0,1,8.611,6.8446V5.0762a5.9285,5.9285,0,0,1,.16-1.4891A1.5113,1.5113,0,0,1,9.394,2.716a1.7731,1.7731,0,0,1,1.1-.328,2.2579,2.2579,0,0,1,.9879.1961,1.39,1.39,0,0,1,.6518.5738,2.1953,2.1953,0,0,1,.2884.6732A5.2665,5.2665,0,0,1,12.5164,4.93V6.6476a6.9433,6.9433,0,0,1-.0945,1.3464A1.98,1.98,0,0,1,12.1,8.8289Zm-.8777-4.6382a.6813.6813,0,0,0-.1975-.4979.6194.6194,0,0,0-.4529-.206.6113.6113,0,0,0-.4529.206.6843.6843,0,0,0-.2014.4979V7.7464a.6632.6632,0,0,0,.1928.4671.6091.6091,0,0,0,.46.2034.6741.6741,0,0,0,.6516-.67ZM6.9062,9.5328H5.3449V4.403L3.3847-.0029H5.0908L6.0666,3.29,7.0375-.0029H8.741L6.9062,4.403Z" transform="translate(-0.1837 0.0029)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.2888 23.9846"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>pinterest</title><path class="cls-1" d="M10.7588,17.5812c-1.4314-.1129-2.0322-.8367-3.1541-1.5316C6.9875,19.3514,6.2334,22.5167,4,24.17,3.3108,19.18,5.0124,15.4316,5.8025,11.4521c-1.3472-2.3133.1622-6.97,3.0038-5.822,3.4964,1.4106-3.0278,8.6015,1.3518,9.5,4.5732.9379,6.44-8.0946,3.6045-11.0322C9.6652-.1439,1.8359,4.0009,2.7987,10.0732c.2343,1.4846,1.7376,1.9355.6008,3.984C.7772,13.4644-.0053,11.3545.0954,8.5416A8.9178,8.9178,0,0,1,8.0554.2663c4.9381-.5638,9.5729,1.85,10.213,6.5891C18.9888,12.2048,16.0391,17.9978,10.7588,17.5812Z" transform="translate(-0.087 -0.1857)"/></svg>
+                  </a>
+                  <a href="#" target="_blank">
+                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5916 23.6926"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>instagram</title><path class="cls-1" d="M17.5877,23.9872H5.8505A5.57,5.57,0,0,1,.4232,18.2954V5.9865A5.5707,5.5707,0,0,1,5.8505.2946H17.5877a5.5707,5.5707,0,0,1,5.4271,5.6919V18.2954A5.57,5.57,0,0,1,17.5877,23.9872ZM11.7191,4.8027a7.182,7.182,0,0,0-6.9976,7.3382A7.1827,7.1827,0,0,0,11.7191,19.48a7.1829,7.1829,0,0,0,6.9977-7.3391A7.1822,7.1822,0,0,0,11.7191,4.8027Zm7.1651-2.6069a2.1225,2.1225,0,0,0-2.0677,2.1687,2.07,2.07,0,1,0,4.1354,0A2.1219,2.1219,0,0,0,18.8842,2.1958Zm-7.1651,15.711a5.6433,5.6433,0,0,1-5.4974-5.7659,5.6425,5.6425,0,0,1,5.4974-5.765,5.6422,5.6422,0,0,1,5.4973,5.765A5.643,5.643,0,0,1,11.7191,17.9068Z" transform="translate(-0.4232 -0.2946)"/></svg>
+                  </a>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+
+        </nav>
+        <div class="maxw front">
+          <div class="zind">
+            <h2><strong>Discover The World</strong> <br>While Discovering <br>Your True Self</h2>
+            <div class="btn-block mt50">
+              <a href="#" class="btn" title="Discover Your Next Horizon">Discover Your Next Horizon</a>
+            </div>
+          </div>
+          <img src="img/meditation.jpg" class="abs" alt="meditation" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="advantages" class="beige rel fl">
+        <div class="container tc">
+          <div class="whblock mtm">
+            <div class="whblock-cont pb0">
+              <h4>Your Personal Gateway to Transformation Awaits.</h4>
+              <div class="mt35">
+                <p>Why settle for the ordinary when you can cultivate the extraordinary? A consultation with TerraPeutic is not merely a logistical preamble but the opening act of your transformative journey—a sacred dialogue to align your travel desires with your inner quest for growth and well-being.</p>
+              </div>
+              <div class="mt70">
+                <h4>Why a Consultation is Beneficial:</h4>
+              </div>
+              <div class="items fl pt-items">
+
+                <div class="w3">
+                  <div class="item-beige">
+                    <h6>Personalization:</h6>
+                    <div class="icon">
+                      <img src="img/personalization.svg" alt="Personalization" />
+                    </div>
+                    <p>A consultation allows us to design a voyage as unique as you, embedding your specific emotional and spiritual goals into the heart of your travel experience.</p>
+                  </div>
+                </div>
+
+                <div class="w3">
+                  <div class="item-beige">
+                    <h6>Expert Guidance:</h6>
+                    <div class="icon">
+                      <img src="img/expert_guidance.svg" alt="Expert Guidance" />
+                    </div>
+                    <p>Our travel therapy professionals are skilled at weaving holistic well-being into every itinerary, and they need to understand you to do it right.</p>
+                  </div>
+                </div>
+
+                <div class="w3">
+                  <div class="item-beige">
+                    <h6>Fine-tuned Logistics:</h6>
+                    <div class="icon">
+                      <img src="img/logistics.svg" alt="Fine-tuned Logistics" />
+                    </div>
+                    <p>With luxury comes complexity. A consultation ensures every aspect of your trip—from exclusive experiences to first-class accommodations—is meticulously curated to your </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="btn-block jc mt80">
+                <a href="#" class="btn" title="Learn More About Travel Therapy">Learn More About Travel Therapy</a>
+              </div>
+
+            </div>
+            <img src="img/shopping.jpg" class="bot-img" alt="shopping" />
+          </div>
+        </div>
+        <div class="bg-bot"></div>
+      </section>
+
+      <section id="destinations" class="blue pad">
+        <div class="container">
+          <div class="wc tc">
+            <h4>Featured Destinations</h4>
+          </div>
+          <div class="items fl pt-items2 shad-hov">
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/peru.jpg);">
+                  <div class="image-desc wc">
+                    <h6>Machu Picchu, Peru:</h6>
+                    <div class="image-text mt20">
+                      <p>Ascend to the heavens amidst the cloud-kissed peaks of Machu Picchu. Here, the air is laced with the whispers of ancient civilizations, offering a sacred landscape for profound personal transformation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Ascend to the heavens amidst the cloud-kissed peaks of Machu Picchu. Here, the air is laced with the whispers of ancient civilizations, offering a sacred landscape for profound personal transformation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/bhutan.jpg);">
+                  <div class="image-desc wc">
+                    <h6>Bhutan:</h6>
+                    <div class="image-text mt20">
+                      <p>Our travel therapy professionals are skilled at weaving holistic well-being into every itinerary, and they need to understand you to do it right.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Our travel therapy professionals are skilled at weaving holistic well-being into every itinerary, and they need to understand you to do it right.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/rwanda.jpg);">
+                  <div class="image-desc wc">
+                    <h6>Rwanda:</h6>
+                    <div class="image-text mt20">
+                      <p>Awaken your primal spirit in the heart of Africa. Rwanda’s emerald jungles offer a symphony of nature that serenades your senses while your soul makes a transformative journey through the misty realms of ancestral roots.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Awaken your primal spirit in the heart of Africa. Rwanda’s emerald jungles offer a symphony of nature that serenades your senses while your soul makes a transformative journey through the misty realms of ancestral roots.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/portugal.jpg);">
+                  <div class="image-desc wc">
+                    <h6>Portugal:</h6>
+                    <div class="image-text mt20">
+                      <p>Sail on the azure waves that cradle Portugal's golden coastline, sipping vintage Port as the sun dips below the Atlantic horizon. With every cobblestone traversed, find a new cornerstone for your ever-expanding inner sanctuary.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Sail on the azure waves that cradle Portugal's golden coastline, sipping vintage Port as the sun dips below the Atlantic horizon. With every cobblestone traversed, find a new cornerstone for your ever-expanding inner sanctuary.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/bali.jpg);">
+                  <div class="image-desc wc">
+                    <h6>Bali:</h6>
+                    <div class="image-text mt20">
+                      <p>Revel in the spiritual opulence of Bali, where azure waters meet emerald rice terraces. Every sunrise here is a brushstroke on your soul's canvas as you inhale the rich aroma of incense and spices, inviting holistic rejuvenation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Revel in the spiritual opulence of Bali, where azure waters meet emerald rice terraces. Every sunrise here is a brushstroke on your soul's canvas as you inhale the rich aroma of incense and spices, inviting holistic rejuvenation.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="btn-block jc wc mt80">
+            <a href="#" class="btn" title="Explore Destinations">Explore Destinations</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="services" class="beige pad">
+        <div class="container">
+          <div class="tc">
+            <h4><strong>Services & Offerings</strong></h4>
+            <h4>Types of Travel Therapy:</h4>
+            <div class="cite">
+              <p>Unfurl a Portfolio of Exquisite Journeys, Exclusively Crafted Just for You</p>
+              <img src="img/quote1.svg" class="quote q1" alt="quote 1" />
+              <img src="img/quote2.svg" class="quote q2" alt="quote 2" />
+            </div>
+          </div>
+
+          <div class="blocks mt80">
+
+            <div class="block fl">
+              <div class="media opt" style="background-image: url(img/journeys.jpg);"></div>
+              <div class="text va">
+                <div class="text-cont">
+                  <h6>Group Journeys:</h6>
+                  <p>Join One of Our Signature Departures — Immerse yourself in a communal odyssey of global allure and individual enlightenment. Our group experiences are highly exclusive, accommodating only 14 discerning guests. It's an intimate sphere for collective wisdom and personal transformation to flourish.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block fl ord">
+              <div class="media opt" style="background-image: url(img/individual_journey.jpg);"></div>
+              <div class="text va">
+                <div class="text-cont">
+                  <h6>Individual Journey:</h6>
+                  <p>Embark on a Solo Odyssey of Self-Discovery — Unearth your hidden depths with a tailor-made, transformative voyage that places you amid indescribable grandeur and beauty settings.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block fl">
+              <div class="media opt" style="background-image: url(img/couoples_journey.jpg);"></div>
+              <div class="text va">
+                <div class="text-cont">
+                  <h6>Couples Journey:</h6>
+                  <p>Reignite the Sacred Flame — Meander through the world's most mesmerizing landscapes, united in love, deepening your emotional connection under the gaze of skilled relationship counselors.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="block fl ord">
+              <div class="media opt" style="background-image: url(img/family_journey.jpg);"></div>
+              <div class="text va">
+                <div class="text-cont">
+                  <h6>Family Journey:</h6>
+                  <p>Harmonize Your Household in Exotic Locales — Steer your family through carefully curated escapades that solidify your familial ties and cater to each individual's soulful enrichment, directed by esteemed family therapy experts.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tc pt">
+            <h4>Featured Activities:</h4>
+            <div class="cite">
+              <p>Craft Your Own Symphony of Soulful Experiences from Our Luxurious Palette</p>
+              <img src="img/quote1.svg" class="quote q1" alt="quote 1" />
+              <img src="img/quote2.svg" class="quote q2" alt="quote 2" />
+            </div>
+          </div>
+
+          <div class="fl pt30 shad-hov">
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/mindfulness.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Machu Picchu, Peru:</h4>
+                    <div class="image-text mt20">
+                      <p>Ascend to the heavens amidst the cloud-kissed peaks of Machu Picchu. Here, the air is laced with the whispers of ancient civilizations, offering a sacred landscape for profound personal transformation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Ascend to the heavens amidst the cloud-kissed peaks of Machu Picchu. Here, the air is laced with the whispers of ancient civilizations, offering a sacred landscape for profound personal transformation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/hiking.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Hiking:</h4>
+                    <div class="image-text mt20">
+                      <p>Stride Toward Enlightenment on Unbeaten Paths — Each step on terrains of awe-inspiring splendor is a stride towards a higher self, orchestrated for the discerning traveler.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Stride Toward Enlightenment on Unbeaten Paths — Each step on terrains of awe-inspiring splendor is a stride towards a higher self, orchestrated for the discerning traveler.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/yoga.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Yoga:</h4>
+                    <div class="image-text mt20">
+                      <p>Unlock Harmonic Resonance with Age-Old Rituals — Elevate your existence through restorative yoga sequences set against the backdrop of heavenly vistas that resonate with your newfound tranquility.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Unlock Harmonic Resonance with Age-Old Rituals — Elevate your existence through restorative yoga sequences set against the backdrop of heavenly vistas that resonate with your newfound tranquility.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/meditation2.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Meditation:</h4>
+                    <div class="image-text mt20">
+                      <p>Cultivate Serenity in the Cradle of Nature's Grandeur — A quiet mind opens doors to inner palaces. Each meditation session, set amidst natural tranquility, is your key.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Cultivate Serenity in the Cradle of Nature's Grandeur — A quiet mind opens doors to inner palaces. Each meditation session, set amidst natural tranquility, is your key.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/cultural_immersion.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Cultural <br>Immersion:</h4>
+                    <div class="image-text mt20">
+                      <p>Engage in an Authentic Tapestry of Local Life — Experience the richness of global cultures from within as you spend invaluable moments interacting with local artisans, musicians, and historians.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Engage in an Authentic Tapestry of Local Life — Experience the richness of global cultures from within as you spend invaluable moments interacting with local artisans, musicians, and historians.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/culinary_discovery.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Culinary <br>Discovery:</h4>
+                    <div class="image-text mt20">
+                      <p>Savor Heritage in Every Bite — Don the chef's hat and cook alongside local culinary maestros. Every dish is a time-honored recipe, a mouthful of tradition, a feast for the soul.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Savor Heritage in Every Bite — Don the chef's hat and cook alongside local culinary maestros. Every dish is a time-honored recipe, a mouthful of tradition, a feast for the soul.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/workshops.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Artisan <br>Workshops:</h4>
+                    <div class="image-text mt20">
+                      <p>Craft Your Story with Local Artisans — Learn time-honored crafts directly from the masters. Each stitch, brushstroke, or chisel mark becomes an engraving on your soul.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Craft Your Story with Local Artisans — Learn time-honored crafts directly from the masters. Each stitch, brushstroke, or chisel mark becomes an engraving on your soul.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w2 item">
+              <div class="item-white">
+                <div class="image shadow full" style="background-image: url(img/wine.jpg);">
+                  <div class="image-desc wc">
+                    <h4>Wine and Dine <br>Experience:</h4>
+                    <div class="image-text mt20">
+                      <p>Indulge in the Elixir of Life — Be led through a curated selection of vineyards and dining establishments, where each sip and bite is a homage to the locale's rich history and vibrant culture.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-text mobile">
+                  <p>Indulge in the Elixir of Life — Be led through a curated selection of vineyards and dining establishments, where each sip and bite is a homage to the locale's rich history and vibrant culture.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="btn-block jc mt80">
+            <a href="#" class="btn" title="View All Services">View All Services</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="experts" class="blue pad">
+        <div class="container">
+          <div class="wc tc">
+            <h4>Meet the Experts</h4>
+          </div>
+
+          <div class="items fl pt-items2">
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/peru.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Peru<br> <span class="light">Eduardo Santiago</span></h6>
+                    <img src="img/peru_flag.jpg" alt="Peru flag" />
+                  </div>
+                </div>
+                <div class="item-cite wc">
+                  <p>The Connoisseur of the<br> 
+                    Sacred Valley"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Eduardo, a native of Cusco, brings a wealth of knowledge about the Inca civilization and the stunning landscapes of Peru. Eduardo is a certified mountain guide and historian specializing in indigenous healing techniques. His luxury treks to Machu Picchu often include exclusive access to </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/bhutan.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Bhutan<br> <span class="light">Tenzin Choden</span></h6>
+                    <img src="img/bhutan_flag.jpg" alt="Bhutan flag" />
+                  </div>
+                </div>
+                <div class="item-cite wc">
+                  <p>"The Spiritual Cartographer<br> 
+                    of the Himalayas"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Tenzin, a Bhutanese monk turned guide, offers travelers a profoundly spiritual and enriching experience. With his profound knowledge of Buddhist philosophy and the topography of the Himalayan kingdom, Tenzin leads high-end tours that touch both the soul and the mind. Expect private temple tours and meditation sessions amid Bhutan's jaw-dropping landscapes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/rwanda.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Sri Lanka<br> <span class="light">Amara De Silva</span></h6>
+                    <img src="img/sri_lanka_flag.jpg" alt="Sri Lanka flag" />
+                  </div>
+                </div>
+                <div class="item-cite wc">
+                  <p>"The Epicurean Explorer<br> 
+                    of the Emerald Isle"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Amara, a Sri Lankan native with a background in anthropology and gastronomy, delivers a rich tapestry of experiences. With her, you’ll explore ancient ruins, wildlife reserves, and local markets, where you’ll taste and cook authentic Sri Lankan cuisine. Amara will make your journey a culinary and historical odyssey of a lifetime.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/portugal.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Portugal<br> <span class="light">Sofia Oliveira</span></h6>
+                    <img src="img/portugal_flag.jpg" alt="Portugal flag" />
+                  </div>
+                </div>
+                <div class="item-cite wc">
+                  <p>"The Steward of Portugal’s<br> 
+                    Hidden Treasures"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Sofia, a Lisbon native with a degree in Portuguese history and literature, offers guided tours that eloquently blend Portugal’s rich history, art, and culinary scenes. From exclusive wine-tasting events in Porto to private fado performances in Lisbon, Sofia ensures that every moment of your journey is a luxurious revelation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/bali.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Bali<br> <span class="light">Nyoman Adi</span></h6>
+                    <img src="img/bali_flag.jpg" alt="Bali flag" />
+                  </div>
+                </div>
+                <div class="item-cite wc">
+                  <p>"The Maestro of Balinese<br> 
+                    Spirituality and Art"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Nyoman is a Balinese artist and spiritual guide who embodies Bali's rich cultural and spiritual traditions. Nyoman provides a profoundly authentic and luxurious Balinese experience from temple rituals to traditional art workshops. His tours often conclude with an intimate, private ceremony to help you internalize your travel transformations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w3 item">
+              <div class="item-white tc">
+                <div class="image shadow" style="background-image: url(img/rwanda.jpg);">
+                  <div class="country">
+                    <h6 class="whitec">Rwanda<br> <span class="light">Jean-Paul Hakizimana</span></h6>
+                    <img src="img/rwanda_flag.jpg" alt="Rwanda flag" />
+                  </div>
+                </div>
+                <div class="item-cite">
+                  <p>"The Guardian of Rwanda’s<br> 
+                    Soul and Soil"</p>
+                </div>
+                <div class="item-text2">
+                  <p>Jean-Paul, a Rwanda native and conservation biologist, offers tours that blend Rwanda’s gripping history and breathtaking nature. With his expert guidance, he journeys through the enigmatic forests to witness gorillas and learn about local initiatives for peace and reconciliation. Jean-Paul offers an experience that's a soulful awakening and a visual spectacle.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="btn-block jc wc mt80">
+            <a href="#" class="btn" title="Schedule a Consultation">Schedule a Consultation</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="why-choose" class="lgray">
+        <div class="media-col opt"  style="background-image: url(img/documents.jpg);">
+        </div>
+        <div class="container">
+          <div class="text-col">
+            <h4><strong>Why Choose TerraPeutic?</strong></h4>
+            <h4>Unique Value Proposition</h4>
+            <h6>Discover the World While Discovering Your True Self.</h6>
+            <p>In a world of fleeting leisure and shallow travel experiences, TerraPeutic offers a compelling alternative. We go beyond the superficial glamour and the ubiquitous attractions to curate journeys that are as much about internal exploration as they are about discovering new landscapes. Our meticulously planned itineraries, led by globally renowned local guides, are not mere trips but transformative rituals.</p>
+            <p>From exclusive spiritual sojourns in Bhutan’s monasteries to private dinners atop Portugal’s ancient fortresses, every TerraPeutic journey is a symbiosis of luxury and self-discovery.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="experience" class="lgray ord">
+          <div class="media-col opt x70"  style="background-image: url(img/experience.jpg);">
+          </div>
+          <div class="container">
+            <div class="text-col">
+              <h4>The TerraPeutic Experience</h4>
+              <h6>The Quintessence of Luxurious, Transformative Travel.</h6>
+              <p>When you embark on a TerraPeutic journey, you aren't just reserving a seat on a flight; you are commissioning a bespoke experience tailored to the contours of your innermost desires and needs.</p>
+              <p><strong>Exclusivity:</strong> With group departures capped at a maximum of 14 esteemed guests, each journey maintains the intimate allure of a private soiree, teeming with like-minded individuals who share your pursuit of holistic well-being.</p>
+              <p><strong>Versatility:</strong> We offer an array of Travel Therapy modalities to suit individuals, couples, and families. Whether Mindfulness in Bali, Culinary Immersion in Sri Lanka, or Conservation Walks in Rwanda, each activity is designed to nourish the soul.</p>
+              <p><strong>Local Expertise:</strong> Our local guides are not just area experts but spiritual and cultural custodians of their respective lands. They facilitate an immersive experience that no ordinary travel agency can provide.</p>
+              <p><strong>End-to-End Luxury:</strong> Every logistical aspect, from your airport pick-up in a luxury sedan to your accommodation in five-star wellness resorts, is perfectly arranged. Each moment with TerraPeutic is a seamless blend of opulence and insightful exploration.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="pad2">
+        <div class="container tc h-black">
+          <h4 class="lh4">Unlock the secrets of your soul while unraveling the mysteries of the world. <br><strong>Choose TerraPeutic. Choose transformation.</strong></h4>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="va jc mb">
+          <a href="#" class="logo">
+            <img src="img/logo.png" alt="logotype" />
+          </a>
+        </div>
+
+        <div class="menu fl">
+          <div class="col col1">
+            <p class="menu-title">About Us</p>
+            <ul>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Why Choose TerraPeutic?</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Press & Accolades</a></li>
+            </ul>
+          </div>
+
+          <div class="col col2">
+            <p class="menu-title">Services & Offerings</p>
+            <ul>
+              <li><a href="#">Introduction to Travel Therapy</a></li>
+              <li><a href="#">Types of Journeys</a></li>
+              <li><a href="#">Featured Activities</a></li>
+              <li><a href="#">Therapeutic Modalities</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <p class="menu-title">Destinations</p>
+            <ul>
+              <li><a href="#">Featured Destinations</a></li>
+              <li><a href="#">Upcoming Destinations</a></li>
+            </ul>
+          </div>
+
+          <div class="col col3">
+            <p class="menu-title">Blog</p>
+            <ul>
+              <li><a href="#">Featured Articles</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <p class="menu-title">Contact Us</p>
+            <ul>
+              <li><a href="#">Contact Information</a></li>
+              <li><a href="#">Contact Form</a></li>
+              <li><a href="#">Map & Office Locations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu va line2">
+          <div class="left fl">
+            <div class="col col1">
+              <p class="menu-title"><a href="faq.html">faq</a></p>
+            </div>
+            <div class="col">
+              <p class="menu-title"><a href="#">book a Consultation</a></p>
+            </div>
+          </div>
+          <div class="sots va">
+            <a href="#" target="_blank">
+              <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2406 22.9254"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>facebook</title><path class="cls-1" d="M11.7791,4.5033l-1.978.0009c-1.3632,0-1.6126.5377-1.6126,1.5976V8.3075h3.4524a.4591.4591,0,0,1,.3267.1365.4734.4734,0,0,1,.1352.3307l-.0015,3.7689a.4648.4648,0,0,1-.4616.4681H8.1883v9.51a.4649.4649,0,0,1-.4617.468H3.8752a.4648.4648,0,0,1-.4616-.468v-9.51H.4617A.4651.4651,0,0,1,0,12.5436V8.7747a.4642.4642,0,0,1,.4617-.4672H3.4138V5.706c0-3.4273,2.1314-5.6421,5.43-5.6421L11.78.0693a.4645.4645,0,0,1,.461.4672v3.5A.4646.4646,0,0,1,11.7791,4.5033Z" transform="translate(0 -0.0639)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="twitter" data-name="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6665 21.3152"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>twitter</title><path class="cls-1" d="M22.6494,5.5753l.0172.6976c0,7.1123-5.2957,15.3134-14.9806,15.3134a14.6769,14.6769,0,0,1-8.0716-2.418,10.6765,10.6765,0,0,0,1.2565.0741A10.4256,10.4256,0,0,0,7.41,16.94,5.29,5.29,0,0,1,2.492,13.2008,5.1454,5.1454,0,0,0,4.8705,13.11,5.3606,5.3606,0,0,1,.6475,7.8307V7.7638A5.1734,5.1734,0,0,0,3.0323,8.44a5.4686,5.4686,0,0,1-1.63-7.1845A14.8444,14.8444,0,0,0,12.2551,6.8783a5.5268,5.5268,0,0,1-.1364-1.2253A5.3257,5.3257,0,0,1,17.3848.2711a5.196,5.196,0,0,1,3.8424,1.7006A10.4706,10.4706,0,0,0,24.5729.6651a5.3926,5.3926,0,0,1-2.3152,2.9756,10.3382,10.3382,0,0,0,3.0232-.8476A10.74,10.74,0,0,1,22.6494,5.5753Z" transform="translate(0.3856 -0.2711)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="google" data-name="google" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.6918 24.1308"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>google</title><path class="cls-1" d="M19.72,24H4.9123A4.4836,4.4836,0,0,1,.47,19.4755V4.3934A4.4831,4.4831,0,0,1,4.9123-.131H19.72a4.4832,4.4832,0,0,1,4.4423,4.5244V19.4755A4.4837,4.4837,0,0,1,19.72,24ZM9.3083,4.5217c-2.117,0-4.1091,1.6328-4.1091,3.5259a3.4426,3.4426,0,0,0,3.5971,3.496l.4367-.0153a2.0045,2.0045,0,0,0-.24.8991,1.88,1.88,0,0,0,.6427,1.3283l-.8185.0081c-2.6223-.0018-4.641,1.7006-4.641,3.4635,0,1.7386,2.2125,2.8247,4.8349,2.8247,2.99,0,4.6409-1.7259,4.6409-3.4635a3.3688,3.3688,0,0,0-1.65-3.1256c-.4266-.309-1.2437-1.0563-1.2437-1.4973,0-.515.1432-.769.9061-1.3771a3.2469,3.2469,0,0,0,1.3325-2.5111A2.8727,2.8727,0,0,0,11.475,5.3h1.4968l1.0606-.778ZM21.2,8.9178H18.2389V5.9015H16.76V8.9178h-2.963v1.537H16.76v3.0108h1.4792V10.4548H21.2ZM9.48,11.0521c-1.2169-.0362-2.3738-1.3862-2.5842-3.0136-.21-1.6292.6059-2.8725,1.8212-2.8364S11.09,6.5449,11.3,8.1714C11.5119,9.8006,10.6942,11.0891,9.48,11.0521Zm2.9005,5.2391a2.2185,2.2185,0,0,1,.0579.4961c0,1.4033-.887,2.5011-3.4349,2.5011-1.8126,0-3.1221-1.1683-3.1221-2.5734,0-1.3771,1.6233-2.522,3.4358-2.5021a3.9064,3.9064,0,0,1,1.1756.1925C11.4765,15.1011,12.183,15.4951,12.3809,16.2912Z" transform="translate(-0.4701 0.131)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="linkdin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.6918 24.1308"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>linkdin</title><path class="cls-1" d="M21.8728,24H1.6812A1.74,1.74,0,0,1-.0694,22.27V1.5976A1.7394,1.7394,0,0,1,1.6812-.131H21.8728a1.7385,1.7385,0,0,1,1.75,1.7286V22.27A1.74,1.74,0,0,1,21.8728,24ZM3.5337,20.0683h3.58V9.1735h-3.58ZM5.3464,3.92A1.8863,1.8863,0,1,0,5.3,7.6852h.024A1.8869,1.8869,0,1,0,5.3464,3.92Zm14.6705,9.9008c0-3.3478-1.766-4.9039-4.1214-4.9039a3.543,3.543,0,0,0-3.2244,1.8009V9.1726H9.0929c.0468,1.0219,0,10.8957,0,10.8957h3.5779V13.9825A2.4738,2.4738,0,0,1,12.79,13.1a1.9585,1.9585,0,0,1,1.8358-1.3246c1.2941,0,1.8123.9993,1.8123,2.4641v5.8292h3.5787Zm-7.3458-3.103v.0344h-.0232Z" transform="translate(0.0694 0.131)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2852 24.3919"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>youtube</title><path class="cls-1" d="M20.4331,23.4728a3.61,3.61,0,0,1-1.106.6713,3.7592,3.7592,0,0,1-1.3611.2449H3.672a3.7118,3.7118,0,0,1-1.3452-.2449A3.586,3.586,0,0,1,1.22,23.4728a3.282,3.282,0,0,1-.7584-.994,2.745,2.745,0,0,1-.2775-1.2343V14.0536a2.7716,2.7716,0,0,1,.2787-1.22,3.0743,3.0743,0,0,1,.7585-.9985,3.83,3.83,0,0,1,1.1071-.6723,3.5908,3.5908,0,0,1,1.3452-.2539H17.9671a3.6524,3.6524,0,0,1,1.3526.2539,3.8175,3.8175,0,0,1,1.1145.6723,3.0482,3.0482,0,0,1,.7573.9985,2.77,2.77,0,0,1,.2774,1.22v7.1909a2.7312,2.7312,0,0,1-.2786,1.2343A3.1835,3.1835,0,0,1,20.4331,23.4728ZM6.3832,13.3162H1.6492V14.43H3.1663v7.6174h1.463v-7.584H6.3832Zm3.568,2.259H8.487v4.0491c0,.2937.0024.5214.0135.6777.01.16-.0111.2611-.0639.3036a.5606.5606,0,0,1-.3768.3849c-.2025.08-.36-.0334-.4688-.3515a.7837.7837,0,0,1-.0147-.318c.011-.1717.0147-.3931.0147-.6669L7.56,15.5752H6.0949l.0343,4.0157c0,.3162-.0074.5783-.0185.7933a1.9174,1.9174,0,0,0,.0185.4816c.02.1781.0392.3633.0613.5666a.6312.6312,0,0,0,.3044.4834,1.0807,1.0807,0,0,0,.5941.1654,1.9458,1.9458,0,0,0,.6713-.1175,2.3415,2.3415,0,0,0,.6039-.3162,1.3618,1.3618,0,0,0,.4051-.4356l-.0283.8015,1.21.0307Zm4.73,1.2624a1.4821,1.4821,0,0,0-.6664-1.3753,1.007,1.007,0,0,0-.5106-.1319,2.1361,2.1361,0,0,0-1.2114.5078v-2.522H10.8276v8.6656l1.2126-.0334.0933-.54a2.7051,2.7051,0,0,0,1.06.6235,1.0063,1.0063,0,0,0,.7966-.0913,1.3077,1.3077,0,0,0,.5094-.6722,2.9675,2.9675,0,0,0,.1816-1.0735Zm4.62,2.934H18.2041v.7355a.497.497,0,0,1-.1829.4093.67.67,0,0,1-.4358.1446h-.2282a.6112.6112,0,0,1-.42-.1446.5181.5181,0,0,1-.1695-.4093V18.95h2.5334v-.9009c0-.337-.0049-.6623-.016-.9732a3.7792,3.7792,0,0,0-.0774-.7283,1.082,1.082,0,0,0-.3927-.7138,1.7592,1.7592,0,0,0-.7634-.366,2.3522,2.3522,0,0,0-.8935-.0343,1.7455,1.7455,0,0,0-.7892.31,1.69,1.69,0,0,0-.62.8042,4.1281,4.1281,0,0,0-.19,1.41v2.0151a2.2416,2.2416,0,0,0,.6543,1.818,1.9568,1.9568,0,0,0,1.2727.507h.13a1.9386,1.9386,0,0,0,1.3232-.6552A1.5925,1.5925,0,0,0,19.37,20.28C19.3529,20.1267,19.3357,19.955,19.3014,19.7716Zm-2.31-3.1563a.6727.6727,0,0,1,.4638-.1717h.0639a.7533.7533,0,0,1,.4861.1645.5491.5491,0,0,1,.1988.4436l-.0331.8006H16.7693l.0319-.8006A.5694.5694,0,0,1,16.9915,16.6153Zm-4.0762,4.3518a.7525.7525,0,0,1-.4566-.1491.4219.4219,0,0,1-.195-.3434V16.6731a.4446.4446,0,0,1,.195-.3506.72.72,0,0,1,.4566-.1563.7125.7125,0,0,1,.453.1563.447.447,0,0,1,.1988.3506v3.8015a.4249.4249,0,0,1-.1988.3434A.7472.7472,0,0,1,12.9153,20.9671ZM15.559,8.7964a2.6487,2.6487,0,0,1-.4295.5069,1.018,1.018,0,0,1-.5585.1645,1.06,1.06,0,0,1-.6062-.1645,1.2483,1.2483,0,0,1-.367-.4428.9958.9958,0,0,1-.0773-.2711,2.1461,2.1461,0,0,0-.05-.27,2.6083,2.6083,0,0,1-.0307-.4437V2.6528H14.81V7.8611a.48.48,0,0,0,.1411.3452.5242.5242,0,0,0,.3842.1464.5469.5469,0,0,0,.3817-.1464.4562.4562,0,0,0,.1633-.3452V2.6528h1.27V9.3367H15.53ZM12.1,8.8289a1.4335,1.4335,0,0,1-.6187.54,2.0248,2.0248,0,0,1-.9094.1942A2.6649,2.6649,0,0,1,9.6173,9.4a.9955.9955,0,0,1-.5891-.4726,2.3659,2.3659,0,0,1-.3215-.74A7.0844,7.0844,0,0,1,8.611,6.8446V5.0762a5.9285,5.9285,0,0,1,.16-1.4891A1.5113,1.5113,0,0,1,9.394,2.716a1.7731,1.7731,0,0,1,1.1-.328,2.2579,2.2579,0,0,1,.9879.1961,1.39,1.39,0,0,1,.6518.5738,2.1953,2.1953,0,0,1,.2884.6732A5.2665,5.2665,0,0,1,12.5164,4.93V6.6476a6.9433,6.9433,0,0,1-.0945,1.3464A1.98,1.98,0,0,1,12.1,8.8289Zm-.8777-4.6382a.6813.6813,0,0,0-.1975-.4979.6194.6194,0,0,0-.4529-.206.6113.6113,0,0,0-.4529.206.6843.6843,0,0,0-.2014.4979V7.7464a.6632.6632,0,0,0,.1928.4671.6091.6091,0,0,0,.46.2034.6741.6741,0,0,0,.6516-.67ZM6.9062,9.5328H5.3449V4.403L3.3847-.0029H5.0908L6.0666,3.29,7.0375-.0029H8.741L6.9062,4.403Z" transform="translate(-0.1837 0.0029)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.2888 23.9846"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>pinterest</title><path class="cls-1" d="M10.7588,17.5812c-1.4314-.1129-2.0322-.8367-3.1541-1.5316C6.9875,19.3514,6.2334,22.5167,4,24.17,3.3108,19.18,5.0124,15.4316,5.8025,11.4521c-1.3472-2.3133.1622-6.97,3.0038-5.822,3.4964,1.4106-3.0278,8.6015,1.3518,9.5,4.5732.9379,6.44-8.0946,3.6045-11.0322C9.6652-.1439,1.8359,4.0009,2.7987,10.0732c.2343,1.4846,1.7376,1.9355.6008,3.984C.7772,13.4644-.0053,11.3545.0954,8.5416A8.9178,8.9178,0,0,1,8.0554.2663c4.9381-.5638,9.5729,1.85,10.213,6.5891C18.9888,12.2048,16.0391,17.9978,10.7588,17.5812Z" transform="translate(-0.087 -0.1857)"/></svg>
+            </a>
+            <a href="#" target="_blank">
+              <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5916 23.6926"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>instagram</title><path class="cls-1" d="M17.5877,23.9872H5.8505A5.57,5.57,0,0,1,.4232,18.2954V5.9865A5.5707,5.5707,0,0,1,5.8505.2946H17.5877a5.5707,5.5707,0,0,1,5.4271,5.6919V18.2954A5.57,5.57,0,0,1,17.5877,23.9872ZM11.7191,4.8027a7.182,7.182,0,0,0-6.9976,7.3382A7.1827,7.1827,0,0,0,11.7191,19.48a7.1829,7.1829,0,0,0,6.9977-7.3391A7.1822,7.1822,0,0,0,11.7191,4.8027Zm7.1651-2.6069a2.1225,2.1225,0,0,0-2.0677,2.1687,2.07,2.07,0,1,0,4.1354,0A2.1219,2.1219,0,0,0,18.8842,2.1958Zm-7.1651,15.711a5.6433,5.6433,0,0,1-5.4974-5.7659,5.6425,5.6425,0,0,1,5.4974-5.765,5.6422,5.6422,0,0,1,5.4973,5.765A5.643,5.643,0,0,1,11.7191,17.9068Z" transform="translate(-0.4232 -0.2946)"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="copy tc">
+          <p>&copy; TerraPeutic 2023</p>
+        </div>
+
+      </div>
+    </footer>
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+    </div>
+  </body>
+</html>
